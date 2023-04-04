@@ -1,6 +1,6 @@
 const express = require("express");
-const pool = require('./bd');
-const routes = require('./routes');
+const pool = require('./src/config/bd');
+const routes = require('./src/routes');
 
 const app = express();
 
