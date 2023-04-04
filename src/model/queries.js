@@ -15,8 +15,7 @@ const getEmployeePunchTimes = `
   ON personnel_department.id = personnel_employee.department_id
   INNER JOIN personnel_position
   ON personnel_position.id = personnel_employee.position_id
-  WHERE dept_name = $1 
-  AND is_active = 'true'
+  WHERE dept_name = $1
   AND EXISTS (
     SELECT 1
     FROM iclock_transaction
