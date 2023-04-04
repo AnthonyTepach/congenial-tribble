@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const pool = require('./config/bd');
-const { getEmployeePunchTimes } = require('./queries');
+const { getEmployeePunchTimes } = require('./model/queries');
 
 const router = Router();
 
