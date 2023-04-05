@@ -11,7 +11,10 @@ pool.connect((err) => {
     console.log("Conexión exitosa con la base de datos");
   }
 });
-
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  next();
+});
 app.use('/api', routes);
 
 app.listen(3000, () => {
