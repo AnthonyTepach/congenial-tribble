@@ -7,5 +7,4 @@ COPY . /app
 EXPOSE
 
 ENTRYPOINT ["npm"]
-
 CMD ["start"]
