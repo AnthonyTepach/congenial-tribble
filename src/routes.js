@@ -16,6 +16,7 @@ router.get("/consulta", async (req, res) => {
     ]);
 
     res.json(result.rows);
+    console.log(result.rows);
   } catch (err) {
     console.error(err);
     res.status(500).send("Error al ejecutar la consulta");

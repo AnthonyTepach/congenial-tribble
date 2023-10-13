@@ -9,7 +9,7 @@ services:
     environment:
       NODE_ENV: 'development'
     ports:
-      - "3000:3000"
+      - "8000:3000"
     volumes:
       - .:/app
     restart: unless-stopped
