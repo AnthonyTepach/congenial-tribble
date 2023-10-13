@@ -1,0 +1,11 @@
+FROM node:lts
+
+WORKDIR /app
+
+COPY . /app
+
+EXPOSE
+
+ENTRYPOINT ["npm"]
+
+CMD ["start"]
