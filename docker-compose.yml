@@ -3,7 +3,7 @@ version: "3"
 services:
   api_biotime:
     build:
-      context: DockerFile
+      context: Dockerfile
     environment:
       NODE_ENV: 'development'  
     ports:
