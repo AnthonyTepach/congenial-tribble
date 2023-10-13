@@ -8,6 +8,11 @@ services:
       dockerfile: Dockerfile
     environment:
       NODE_ENV: 'development'
+      DB_USER: 'postgres'
+      DB_HOST: '192.168.1.8'
+      DB_DATABASE: 'biotime'
+      DB_PASSWORD: 'postgres'
+      DB_PORT: 7496
     ports:
       - "8000:3000"
     volumes:
