@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . /app
 
-EXPOSE
+EXPOSE 3000
 
 ENTRYPOINT ["npm"]
 CMD ["start"]
