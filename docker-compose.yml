@@ -2,6 +2,7 @@ version: '3'
 
 services:
   api_biotime:
+    container_name: api-biotime-container  # Agrega el nombre del contenedor aquí
     build:
       context: .
       dockerfile: Dockerfile
