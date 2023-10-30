@@ -17,6 +17,17 @@ app.use((req, res, next) => {
 });
 app.use('/api', routes);
 
+// Middleware de manejo de errores
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ error: 'Hubo un error en el servidor' });
+});
+
 app.listen(3000, () => {
   console.log("Servidor iniciado en el puerto 3000");
+});
+
+// Cerrar la conexión a la base de datos cuando se detiene la aplicación
+app.on('close', () => {
+  pool.end();
 });
