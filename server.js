@@ -1,4 +1,7 @@
 const express = require("express");
+const https = require("https"); // Importar el módulo HTTPS de Node.js
+const fs = require("fs");
+
 const pool = require('./src/config/bd');
 const routes = require('./src/routes');
 
